@@ -1,9 +1,11 @@
-# Tank Arena 3D V1
+# Tank Arena 3D V1.1 — update for existing Render deployment
 
-Cartoon 3D third-person browser tank battle prototype. Two human players cooperate against enemy bots; optional friendly AI. Tanks start with 100 HP, compact arena, solid cover, speed and stronger-shell pickups. No aiming marker.
+Changes: walls 6.5 units high; tanks visually 30% smaller; closer/lower third-person camera; E or left mouse button shoots; shells move at 11 units/s (was 24) with a visible trail; left/right steering and turret inputs inverted as requested. No crosshair or aiming aid.
 
-Controls: W/S drive, A/D turn, left/right arrows rotate turret, Space fires.
+**Solo:** Friendly AI defaults to 0. Create a room with 0 friendly AI for exactly one player tank plus enemy bots. Set Friendly AI to 1 to add a teammate, or have a friend join the room code. Up to two human players per room.
 
-Deploy: Upload all five files to a new GitHub repository root. Create a Render Node Web Service with Build Command `npm install` and Start Command `npm start`. Do not overwrite your existing 2D game.
+**Controls:** W/S forward/back; A/D steering; Left/Right arrow rotate turret; E or left mouse shoot.
 
-Note: Three.js loads from a CDN. This is a prototype, not yet verified by a live two-browser multiplayer test. Base defense victory condition and advanced bot pathfinding are not implemented yet.
+**Update:** Unzip and upload all five files to your EXISTING GitHub tank-fight-3d repository root, overwrite, commit, and wait for Render to redeploy. Keep the same Render URL.
+
+**Notes:** Multiplayer/AI still use server-authoritative game state. This is a prototype; AI navigation and full browser gameplay need real-world testing. Requires internet for Three.js CDN.
